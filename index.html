@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validación del formulario al enviar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Validación del formulario al enviar</h1>
+        <form action="#" id="form" name="form">
+            <div class="form-group">
+                <label for="campoNombre">Nombre:
+                    <input type="text" id="campoNombre" name="campoNombre" size="50" placeholder="Ej: Maria, Javier ...">
+                </label></div>
+            <div class="form-group">
+                <label for="campoApellidos">Apellidos:
+                    <input type="text" id="campoApellidos" name="campoApellidos" size="50" placeholder="Ej: Perez García, Lucas Gonzalez ...">
+                </label></div>
+            <div class="form-group">
+                <label for="fecha">Fecha de Nacimiento:
+                    <input type="text" size="2" id="campoDia" name="campoDia">
+                    <input type="text" size="2" id="campoMes" name="campoMes">
+                    <input type="text" size="4" id="campoAnio" name="campoAnio">
+                </label></div>
+            <div class="form-group">
+                <label for="campoEmail">Email:
+                    <input type="text" id="campoEmail" name="campoEmail" size="50" placeholder="Ej: lucas@gmail.com...">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="campoLista">Deporte preferido:
+                    <select name="campoLista" id="campoLista">
+                        <option value="0">--Seleccione un deporte--</option>
+                        <option value="1">Futbol</option>
+                        <option value="2">Baloncesto</option>
+                        <option value="3">Rugby</option>
+                        <option value="4">Voleibol</option>
+                        <option value="5">Tenis</option>
+                        <option value="6">Motos</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">
+                    <input type="checkbox" id="terminos" name="terminos">Acepto los términos de uso.
+                </label>
+            </div>
+            <button class="btn btn-primary" id="enviar" name="enviar">Enviar</button>
+        </form>
+    </div>
+    <script src="js/validaciones.js"></script>
+</body>
+
+</html>
